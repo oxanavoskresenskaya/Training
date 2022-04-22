@@ -1,15 +1,18 @@
-let login;
-let password;
-function singIn(login,password){
-    let result;
-    if (login=='friend' && password=='admin201')
-    {result=false;}
-    if(login=='admin' && password=='admin2019')
-    {result=true;}
-    if(login=='root' && password=='admin2019')
-    {result=false;}
-    if(login=='admin' && password=='admin')
-    {result=false;}
-    return result;}
-let res = singIn('root','admin2019');
-console.log (res);
+function switched(a){
+    var res;
+       switch(a) {
+       case 0:
+           res = false;
+           break;
+       case 1:
+           res = true;
+           break;
+       case 2:
+       case 3:
+           res = 'error';
+           break;
+       }
+    return res;   
+   }
+   let sw=switched(0);
+   console.log(sw);
