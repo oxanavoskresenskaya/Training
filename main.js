@@ -3,10 +3,10 @@ function compared(Word, nextWord) {
     Word = prompt ('Ведите слово', '');
     nextWord = prompt ('Ведите следующее слово','');
     if (Word.includes(nextWord)) {
-        alert('true');
+        return true;
     }else {
-        alert('false')
+        return false;
     }
 }
-compared();
+console.log(compared());
 
