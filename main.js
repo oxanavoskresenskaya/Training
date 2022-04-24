@@ -1,5 +1,11 @@
-let age = prompt('Ведите значение', '');
-    if (age<=14 || age>=90)
-    {alert('Молодец!');}
-    else {
-        alert ('Не то')}
+
+function pow(x, n) {
+x = prompt ('Введите x', '');
+n = prompt ('Ведите n', '');
+    if(n>0) {
+        return alert(x ** n)
+    } else {
+        return alert('Степень ${n} не поддерживается, используйте натуральное число')
+}
+}
+pow();
