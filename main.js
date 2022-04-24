@@ -1,11 +1,12 @@
 
-function pow(x, n) {
-x = prompt ('Введите x', '');
-n = prompt ('Ведите n', '');
-    if(n>0) {
-        return alert(x ** n)
-    } else {
-        return alert('Степень ${n} не поддерживается, используйте натуральное число')
+function compared(Word, nextWord) {
+    Word = prompt ('Ведите слово', '');
+    nextWord = prompt ('Ведите следующее слово','');
+    if (Word.includes(nextWord)) {
+        alert('true');
+    }else {
+        alert('false')
+    }
 }
-}
-pow();
+compared();
+
